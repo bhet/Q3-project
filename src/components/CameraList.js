@@ -1,11 +1,11 @@
 import React from 'react';
 import Camera from './Camera';
 import { connect } from  'react-redux';
-import { addToCart } from '../redux/action/action';
+import { addToCart } from '../redux/action/cartAction';
 import { bindActionCreators } from 'redux';
 
 const CameraList = (props)=>{
-  console.log("Props ", props.cameras.cameras)
+  console.log("Props ", props)
 
   let cameraList = props.filterPhrase ? props.cameras
     .filter(camera =>camera.name.include(props.filterPhrase))

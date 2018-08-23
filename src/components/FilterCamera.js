@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
-import { filterCameras } from '../redux/action/action';
+import { filterCameras } from '../redux/action/cameraAction';
 import { connect } from "react-redux";
 import { bindActionCreators } from 'redux';
 

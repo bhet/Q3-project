@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import store from './redux/store';
-import { fetchCamera } from './redux/action/action';
+import { fetchCamera } from './redux/action/cameraAction';
 import { Provider } from 'react-redux';
 
 const newStore = store();
