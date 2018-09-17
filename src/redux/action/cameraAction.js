@@ -15,7 +15,7 @@ export const fetchCamera = ()=>{
 }
 
 export const filterCameras = phrase =>{
-  console.log(" Phrase ", phrase)
+  console.log(" Phrase in action", phrase)
   return dispatch =>{
     dispatch({
       type: FILTER_CAMERAS,

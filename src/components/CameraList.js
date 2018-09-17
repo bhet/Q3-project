@@ -8,7 +8,7 @@ const CameraList = (props)=>{
   console.log("Props ", props)
 
   let cameraList = props.filterPhrase ? props.cameras
-    .filter(camera =>camera.name.include(props.filterPhrase))
+    .filter(camera =>camera.name.toLowerCase().includes(props.filterPhrase.toLowerCase()))
     .map(camera => <Camera key={camera.id} camera={camera}/>)
   : props.cameras.map(camera =><Camera key={camera.id} camera={camera}
     addToCartFunc={props.addToCart}/>)
@@ -21,7 +21,8 @@ const CameraList = (props)=>{
 }
 
 const mapStateToProps = state => ({
-  cameras: state.cameras.cameras
+  cameras: state.cameras.cameras,
+  filterPhrase: state.cameras.filterPhrase
 });
 
 const mapDispatchToProps = dispatch => bindActionCreators({

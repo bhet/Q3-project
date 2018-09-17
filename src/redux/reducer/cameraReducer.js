@@ -18,7 +18,7 @@ export default (state = initialState, action)=>{
     }
 
     case FILTER_CAMERAS:
-    console.log(" filterPhrase ", action )
+    console.log(" filterPhrase in reducer", action )
     return {
       ...state,
       filterPhrase: action.payload
