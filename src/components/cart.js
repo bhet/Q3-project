@@ -6,6 +6,7 @@ import { Table } from 'reactstrap';
 class Cart extends React.Component{
   render (){
     console.log("Props in cart", this.props.total)
+    
     let listOfCartItems = this.props.items.map(item =><CartItem key={item.id} item={item}/>)
     return (
       <div>

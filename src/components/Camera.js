@@ -26,7 +26,6 @@ const Camera = (props) => {
           onClick={() => props.addToCartFunc(props.camera.id)}
           >ADD TO CART</Button>
         </CardBody>
-
       </Card>
     </div>
   );
